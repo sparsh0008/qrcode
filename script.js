@@ -16,6 +16,7 @@ domReady(function () {
 	// If found you qr code
 	function onScanSuccess(decodeText, decodeResult) {
 		alert("You Qr is : " + decodeText, decodeResult);
+		window.close();
 	}
 
 	let htmlscanner = new Html5QrcodeScanner(
